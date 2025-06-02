@@ -7,20 +7,14 @@ velocidad = [25, 12, 19, 16, 11, 11, 24, 1,
 10, 5, 23, 3, 5, 9, 5, 3, 12, 20, 5,
 11, 10, 18, 10, 14, 5, 23, 20, 23, 21]
 
-def suma_velocidad(lista, funcion):
-    sumar = funcion(lista)
+def posiciones(lista):
+    promedio = sum(lista) / len(lista)
+    
+    indice = []
+    for i in range(len(lista)):
+        if lista[i] > promedio:
+            indice.append(i)
+      
 
-    return sumar
-   
-suma = suma_velocidad(velocidad, sum)
-
-promedio = suma / len(velocidad)
-
-
-for i in velocidad:
-    lista_indice = []
-    if i > promedio:
-        lista_indice.append(promedio)
-        
-
-    print(lista_indice)
+    print(indice)    
+posiciones(velocidad)

@@ -41,7 +41,7 @@ def filtro(precios:dict[str, int], precio:int, modo:str = "mayor"):
 
 resultado = filtro(precios, precio, modo)
 
-print(f"Los productos mayores al precio {precio} son: ")
+print(f"Los productos mayores al precio {precio} son:")
 
 for precios in resultado:
     print("-", precios)
